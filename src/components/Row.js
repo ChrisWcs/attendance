@@ -7,9 +7,7 @@ const style = {
     alignItems: 'center',
 };
 
-const Row = () => (
+export default Row = () => (
     <div style={style}>
     </div>
 );
-
-export default Row;

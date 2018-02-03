@@ -7,9 +7,7 @@ const style = {
     alignItems: 'center',
 };
 
-const Column = () => (
+export default Column = () => (
     <div style={style}>
     </div>
 );
-
-export default Column;
