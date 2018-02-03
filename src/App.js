@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
 
+import Column from './components/Column';
+import Row from './components/Row';
+
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      days: [],
+      attendance: [],
+      users: [],
+    };
+
+    this.dispatch = this.dispatch.bind(this);
+  }
+  
+  dispatch(){
+
+  }
+
   render() {
     return (
-      <div>
-
-      </div>
+      <Row>
+        <Column></Column>
+        <Column></Column>
+        <Column></Column>
+      </Row>
     );
   }
 }
