@@ -10,7 +10,7 @@ class App extends Component {
     this.state = {
       days: [],
       attendance: [],
-      users: [],
+      students: [],
     };
 
     this.dispatch = this.dispatch.bind(this);
