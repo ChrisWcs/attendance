@@ -6,7 +6,7 @@ import SheetBtn from './components/SheetBtn';
 import AttenBtn from './components/AttenBtn';
 import reducer from './reducers/reducer';
 
-import {createAddStudent} from './reducers/actionCreators';
+import {createAddStudent, createAddDay} from './reducers/actionCreators';
 
 class App extends Component {
   constructor(props){
@@ -32,8 +32,9 @@ class App extends Component {
         <Column>
           <Row>
             {
-              
+              this.state.days.map(x => <h1>{x}</h1>)
             }
+            <SheetBtn passUpFunc={this.dispatch(createAddDay)}/>
           </Row>
           {
             this.state.students.map(x => <h2>{x}</h2>)
