@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 import Column from './components/Column';
 import Row from './components/Row';
+import SheetBtn from './components/SheetBtn';
 
-export default class App extends Component {
+class App extends Component {
   constructor(props){
     super(props);
 
@@ -22,11 +23,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <Row>
-        <Column></Column>
-        <Column></Column>
-        <Column></Column>
-      </Row>
+      <Column>
+        <SheetBtn/>
+      </Column>
     );
   }
 }
+
+export default App;

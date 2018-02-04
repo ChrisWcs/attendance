@@ -7,7 +7,10 @@ const style = {
     alignItems: 'center',
 };
 
-export default Column = () => (
+const Column = ({children}) => (
     <div style={style}>
+        {children}
     </div>
 );
+
+export default Column;
