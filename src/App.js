@@ -29,12 +29,17 @@ class App extends Component {
 
   render() {
     return (
-      <Column>
-        {
-          this.state.students.map(x => <h2>{x}</h2>)
-        }
-        <SheetBtn passUpFunc={this.dispatch(createAddStudent)}/>
-      </Column>
+        <Column>
+          <Row>
+            {
+              
+            }
+          </Row>
+          {
+            this.state.students.map(x => <h2>{x}</h2>)
+          }
+          <SheetBtn passUpFunc={this.dispatch(createAddStudent)}/>
+        </Column>
     );
   }
 }
