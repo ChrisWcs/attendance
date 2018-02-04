@@ -21,7 +21,10 @@ class SheetBtn extends Component {
 
     handleKeyUp(event) {
         if(event.key === "Enter"){
-            console.log(event.key);
+            this.props.passUpFunc(this.state.value);
+            this.setState(() => ({
+                value: ""
+            }));
         }
     }
 

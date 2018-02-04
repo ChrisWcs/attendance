@@ -11,7 +11,7 @@ const reducer = (state, action) => {
         case ADD_STUDENT:
             return {
                 ...state,
-                students: [...state.student, action.student]
+                students: [...state.students, action.student]
             };
         case MARK_DAY:
             const {dayIndex, studentIndex, studentBool} = action;
